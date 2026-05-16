@@ -35,14 +35,23 @@ def load_mapping(mapping_path: Path = MAPPING_FILE) -> list[dict]:
     return raw["mapping"]
 
 
-def hhmm_to_time(s) -> time:
-    if not s or pd.isna(s) or s in ("", "nan", "NaT"):
-        return time(0, 0)
+def hhmm_to_time(s):
+    """Convierte 'HH:MM' a time. Si está vacío devuelve None (celda en blanco)."""
+    if s is None or pd.isna(s):
+        return None
     s = str(s).strip()
-    if not s or ":" not in s:
-        return time(0, 0)
+    if not s or s in ("nan", "NaT") or ":" not in s:
+        return None
     h, m = s.split(":")[:2]
     return time(int(h), int(m))
+
+
+def is_empty_day(row) -> bool:
+    """True si TODAS las celdas del día vienen vacías (libre o ausencia)."""
+    return all(
+        (v is None or pd.isna(v) or str(v).strip() in ("", "nan", "NaT"))
+        for v in (row["ENT_AM"], row["SAL_AM"], row["ENT_PM"], row["SAL_PM"])
+    )
 
 
 def detect_layout(ws) -> dict:
@@ -165,10 +174,17 @@ def inject(
         revision_dias = 0
         for idx, row in person.iterrows():
             xl_row = layout["start_row"] + idx
-            ws.cell(row=xl_row, column=layout["am_in"]).value = hhmm_to_time(row["ENT_AM"])
-            ws.cell(row=xl_row, column=layout["am_out"]).value = hhmm_to_time(row["SAL_AM"])
-            ws.cell(row=xl_row, column=layout["pm_in"]).value = hhmm_to_time(row["ENT_PM"])
-            ws.cell(row=xl_row, column=layout["pm_out"]).value = hhmm_to_time(row["SAL_PM"])
+            if is_empty_day(row):
+                # Día sin fichajes (libre o ausencia): 00:00 en las 4 celdas, como hace Lili.
+                for col_key in ("am_in", "am_out", "pm_in", "pm_out"):
+                    ws.cell(row=xl_row, column=layout[col_key]).value = time(0, 0)
+            else:
+                # Día con fichajes: las celdas vacías se quedan VACÍAS (None) para no
+                # romper las fórmulas con cálculos negativos.
+                ws.cell(row=xl_row, column=layout["am_in"]).value = hhmm_to_time(row["ENT_AM"])
+                ws.cell(row=xl_row, column=layout["am_out"]).value = hhmm_to_time(row["SAL_AM"])
+                ws.cell(row=xl_row, column=layout["pm_in"]).value = hhmm_to_time(row["ENT_PM"])
+                ws.cell(row=xl_row, column=layout["pm_out"]).value = hhmm_to_time(row["SAL_PM"])
 
             estado = str(row.get("Estado", ""))
             fill = None
