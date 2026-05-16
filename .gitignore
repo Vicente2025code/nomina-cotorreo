@@ -1,0 +1,26 @@
+# NUNCA subir datos reales de nómina al repositorio
+inputs/*
+outputs/*
+!inputs/.gitkeep
+!outputs/.gitkeep
+
+# Secrets locales (passwords, claves)
+.streamlit/secrets.toml
+*.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Editores
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Cosas temporales
+*.tmp
+nomina_*/

@@ -1,0 +1,27 @@
+{
+  "_comment": "Mapeo unificado: cada colaborador tiene una fuente única (SR o PDF) según donde marca físicamente. Editar si Lili confirma cambios.",
+  "mapping": [
+    {"sheet": "IRENE",    "clock_name": "iren",     "source": "SR"},
+    {"sheet": "ERIDANIA", "clock_name": "Eridania", "source": "SR"},
+    {"sheet": "RUTH",     "clock_name": "Ruth~~~",  "source": "SR"},
+    {"sheet": "JEICOL",   "clock_name": "Jeicol",   "source": "SR"},
+    {"sheet": "SANDRA",   "clock_name": "Sandra",   "source": "SR"},
+    {"sheet": "Chelsy ",  "clock_name": "Chelsy",   "source": "SR", "note": "Chelsy tiene fichajes en ambos relojes; usamos SR (11 días vs 3 en PDF)"},
+    {"sheet": "ABIGAIL",  "clock_name": "Abigail",  "source": "SR"},
+    {"sheet": "ERICKA",   "clock_name": "Erika",    "source": "SR"},
+    {"sheet": "Maria L",  "clock_name": "LUISA",    "source": "SR"},
+    {"sheet": "Jorge",    "clock_name": "Jorge",    "source": "SR"},
+    {"sheet": "MJOSE",    "clock_name": "Ma Jose S","source": "PDF"},
+    {"sheet": "CELESTE",  "clock_name": "CELESTE",  "source": "PDF"},
+    {"sheet": "MANRIQUE", "clock_name": "MANRIQUE", "source": "PDF"},
+    {"sheet": "HEYDI ",   "clock_name": "HEIDY",    "source": "PDF", "note": "Heidi aparece fantasma en SR (ID 11, 0 fichajes), marca real en PDF"},
+    {"sheet": "Carmen",   "clock_name": "CARMEN",   "source": "PDF"},
+    {"sheet": "Kelly",    "clock_name": "YULIANA",  "source": "PDF", "note": "YULIANA del reloj = Kelly Juliana Hernandez Cordero en planilla"},
+    {"sheet": "Kendall",  "clock_name": "Kendall",  "source": "PDF"}
+  ],
+  "_no_marca_admin": ["Vicente", "Lili", "Pablo", "Ana", "Fabiola", "Felicito"],
+  "_pendientes_revisar_con_lili": [
+    "JOSE PABLO del PDF (3 días con fichajes) probablemente = Pablo Hidalgo de NÓMINA, pero NO hay hoja individual 'Pablo' en el Excel",
+    "Chelsy aparece en ambos relojes — usamos SR por defecto, validar con Lili si los 3 días del PDF deben sumarse"
+  ]
+}
