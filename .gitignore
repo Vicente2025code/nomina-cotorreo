@@ -1,11 +1,11 @@
 # NUNCA subir datos reales de nómina al repositorio
-inputs/*
-outputs/*
-!inputs/.gitkeep
-!outputs/.gitkeep
+nomina/inputs/*
+nomina/outputs/*
+!nomina/inputs/.gitkeep
+!nomina/outputs/.gitkeep
 
 # Secrets locales (passwords, claves)
-.streamlit/secrets.toml
+nomina/.streamlit/secrets.toml
 *.env
 
 # Python
