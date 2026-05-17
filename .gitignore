@@ -8,6 +8,14 @@ nomina/outputs/*
 nomina/.streamlit/secrets.toml
 *.env
 
+# Proyectos de video — assets pesados y deps
+videos/*/node_modules/
+videos/*/out/
+videos/*/public/photos/*
+videos/*/public/videos/*
+videos/*/public/audio/*
+!videos/*/public/**/.gitkeep
+
 # Python
 __pycache__/
 *.pyc

@@ -1,0 +1,22 @@
+[
+  {
+    "deQuien": "Mamá",
+    "foto": "mensaje-mama.jpg",
+    "texto": "Llegaste como huésped y te vas como hija. Esta casa es tuya, siempre."
+  },
+  {
+    "deQuien": "Papá",
+    "foto": "mensaje-papa.jpg",
+    "texto": "Gracias por enseñarnos a ver Costa Rica con ojos nuevos."
+  },
+  {
+    "deQuien": "Hermano/a",
+    "foto": "mensaje-hermano.jpg",
+    "texto": "No sé qué voy a hacer sin vos en la cocina a las 11 de la noche."
+  },
+  {
+    "deQuien": "Toda la familia",
+    "foto": "mensaje-todos.jpg",
+    "texto": "Pauline, gracias por estos 10 meses. Pura vida para siempre."
+  }
+]

@@ -17,3 +17,9 @@ copy, SEO, growth, etc.) en este repo.
 
 Sistema que toma reportes de relojes checadores y prellena el Excel de nómina
 quincenal. Ver [`nomina/README.md`](nomina/README.md) para detalles de uso.
+
+### `videos/pauline/` — Video despedida para Pauline
+
+Proyecto Remotion (vertical 9:16, ~4:30, música de Coldplay) para regalarle a
+Pauline al cierre de su intercambio de 10 meses en Ciudad Quesada. Ver
+[`videos/pauline/README.md`](videos/pauline/README.md) para cómo correrlo.

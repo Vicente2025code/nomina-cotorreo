@@ -1,0 +1,82 @@
+[
+  {
+    "numero": 1,
+    "nombre": "Agosto",
+    "year": 2025,
+    "hito": "Llegada a Ciudad Quesada",
+    "caption": "El primer abrazo. La primera tortilla. El primer 'mucho gusto'.",
+    "fotos": ["mes-01-a.jpg", "mes-01-b.jpg", "mes-01-c.jpg"]
+  },
+  {
+    "numero": 2,
+    "nombre": "Septiembre",
+    "year": 2025,
+    "hito": "Primer día en el colegio",
+    "caption": "Uniforme nuevo, idioma nuevo, amigos nuevos.",
+    "fotos": ["mes-02-a.jpg", "mes-02-b.jpg", "mes-02-c.jpg"]
+  },
+  {
+    "numero": 3,
+    "nombre": "Octubre",
+    "year": 2025,
+    "hito": "Volcán Arenal",
+    "caption": "Costa Rica empezó a sentirse casa.",
+    "fotos": ["mes-03-a.jpg", "mes-03-b.jpg", "mes-03-c.jpg"]
+  },
+  {
+    "numero": 4,
+    "nombre": "Noviembre",
+    "year": 2025,
+    "hito": "Cumpleaños y celebraciones",
+    "caption": "Pastel, piñata y 'pura vida' por todos lados.",
+    "fotos": ["mes-04-a.jpg", "mes-04-b.jpg", "mes-04-c.jpg"]
+  },
+  {
+    "numero": 5,
+    "nombre": "Diciembre",
+    "year": 2025,
+    "hito": "Navidad tropical",
+    "caption": "Sin nieve, pero con tamales.",
+    "fotos": ["mes-05-a.jpg", "mes-05-b.jpg", "mes-05-c.jpg"]
+  },
+  {
+    "numero": 6,
+    "nombre": "Enero",
+    "year": 2026,
+    "hito": "Año nuevo en San Carlos",
+    "caption": "Empezó 2026 lejos de Múnich, cerca del corazón.",
+    "fotos": ["mes-06-a.jpg", "mes-06-b.jpg", "mes-06-c.jpg"]
+  },
+  {
+    "numero": 7,
+    "nombre": "Febrero",
+    "year": 2026,
+    "hito": "Playas del Pacífico",
+    "caption": "Arena negra, agua caliente, atardeceres imposibles.",
+    "fotos": ["mes-07-a.jpg", "mes-07-b.jpg", "mes-07-c.jpg"]
+  },
+  {
+    "numero": 8,
+    "nombre": "Marzo",
+    "year": 2026,
+    "hito": "Semana Santa",
+    "caption": "Tradiciones nuevas, familia nueva.",
+    "fotos": ["mes-08-a.jpg", "mes-08-b.jpg", "mes-08-c.jpg"]
+  },
+  {
+    "numero": 9,
+    "nombre": "Abril",
+    "year": 2026,
+    "hito": "Última aventura",
+    "caption": "Monteverde, perezosos, cataratas.",
+    "fotos": ["mes-09-a.jpg", "mes-09-b.jpg", "mes-09-c.jpg"]
+  },
+  {
+    "numero": 10,
+    "nombre": "Mayo",
+    "year": 2026,
+    "hito": "Las despedidas",
+    "caption": "Lo que cuesta no es irse. Es saber cuánto se queda.",
+    "fotos": ["mes-10-a.jpg", "mes-10-b.jpg", "mes-10-c.jpg"]
+  }
+]
